@@ -1,0 +1,7 @@
+abstract class UserEntity {
+  const UserEntity({required this.id, required this.name, this.email});
+
+  final String id;
+  final String name;
+  final String? email;
+}
