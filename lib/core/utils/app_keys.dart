@@ -38,4 +38,8 @@ class AppKeys {
   static const isManintance = 'driver_is_maintance';
   static const maintanceMessage = 'driver_maintance_message';
   static const isForcedUpdate = 'driver_force_update';
+
+  // Firebase keys
+  static const String firebaseApiKeyIos = 'FIREBASE_API_KEY_IOS';
+  static const String firebaseApiKeyAndroid = 'FIREBASE_API_KEY_ANDROID';
 }
