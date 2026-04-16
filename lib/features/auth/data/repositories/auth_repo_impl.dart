@@ -23,6 +23,11 @@ class AuthRepoImpl implements AuthRepo {
   }
 
   @override
+  FutureVoid resetPassword(String email) async {
+    return executeRemoteCall(() => _remoteDatasource.resetPassword(email));
+  }
+
+  @override
   FutureVoid logout() async {
     return executeRemoteCall(() => _remoteDatasource.logout());
   }

@@ -21,6 +21,7 @@ class CustomTextField extends StatelessWidget {
     this.maxLines = 1,
     this.maxLength,
     this.textInputAction,
+    this.textColor,
   });
 
   final String label;
@@ -37,6 +38,7 @@ class CustomTextField extends StatelessWidget {
   final int maxLines;
   final TextInputAction? textInputAction;
   final int? maxLength;
+  final Color? textColor;
 
   @override
   Widget build(BuildContext context) {
@@ -44,10 +46,7 @@ class CustomTextField extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         if (label.isNotEmpty) ...[
-          Text(
-            label,
-            style: AppStyles.medium14.copyWith(color: AppColors.dark),
-          ),
+          Text(label, style: AppStyles.medium14.copyWith(color: textColor)),
           const SizedBox(height: 8),
         ],
         TextFormField(

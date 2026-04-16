@@ -8,5 +8,7 @@ abstract class AuthRepo {
 
   FutureOf<UserEntity> register(String email, String password);
 
+  FutureVoid resetPassword(String email);
+
   FutureVoid logout();
 }

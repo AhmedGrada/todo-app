@@ -9,7 +9,7 @@ import 'package:todo/core/services/get_it_service.dart';
 import 'package:todo/core/widgets/custom_button.dart';
 import 'package:todo/core/widgets/custom_text_field.dart';
 import 'package:todo/core/widgets/password_text_field.dart';
-import 'package:todo/features/auth/presentation/cubit/cubit/cubit/register_cubit.dart';
+import 'package:todo/features/auth/presentation/cubit/register/register_cubit.dart';
 
 class RegisterScreen extends StatelessWidget {
   RegisterScreen({super.key});
